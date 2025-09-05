@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-shadow: 1px 1px 3px #000;
+      box-sizing: border-box;
+      min-height: 100%;
+      overflow-y: auto; /* Enable scrolling */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .content {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 24px;
+      max-width: 720px;
+      width: 100%;
+      box-shadow: 0 0 12px rgba(0,0,0,0.6);
+      border-radius: 12px;
+      animation: fadeIn 1s ease-out;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h2 { font-size: 22px; }
+      p { font-size: 15px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h2>What is an Earthquake?</h2>
+    <p>
+      An <b>earthquake</b> is the violent, sudden shaking of the ground caused by the abrupt release of energy from underground, usually due to the movement of <b>tectonic plates</b> along a fault.
+    </p>
+  </div>
+</body>
+</html>
