@@ -18,7 +18,6 @@
 
     .wrapper {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       width: 100%;
@@ -26,35 +25,17 @@
       padding: 20px;
     }
 
-    h2 {
-      font-size: 26px;
-      margin-bottom: 24px;
-      letter-spacing: 1px;
-      border-bottom: 1px solid rgba(245,240,230,0.2);
-      padding-bottom: 8px;
-      text-align: center;
-    }
-
-    .section {
-      margin-bottom: 28px;
-      padding: 16px;
+    .content {
       background-color: rgba(245,240,230,0.05); /* subtle parchment tint */
-      border-radius: 12px;
-      width: 100%;
+      padding: 20px;
       max-width: 720px;
+      border-radius: 12px;
       box-shadow: 0 0 20px rgba(20, 10, 5, 0.6);
       backdrop-filter: blur(6px);
       animation: fadeIn 1.2s ease-out;
     }
 
-    .section h3 {
-      font-size: 20px;
-      margin-bottom: 12px;
-      border-left: 4px solid #c49b6c; /* deeper bronze accent */
-      padding-left: 12px;
-    }
-
-    .section p {
+    p {
       font-size: 16px;
       line-height: 1.7;
       margin: 0;
@@ -66,17 +47,14 @@
     }
 
     @media (max-width: 600px) {
-      h2 { font-size: 22px; }
-      .section h3 { font-size: 18px; }
-      .section p { font-size: 15px; }
+      p { font-size: 15px; }
+      .content { padding: 16px; }
     }
   </style>
 </head>
 <body>
   <div class="wrapper">
-    <h2>Understanding Earthquakes</h2>
-    <div class="section">
-      <h3>🌍 What is an Earthquake?</h3>
+    <div class="content">
       <p>
         An <b>earthquake</b> is the violent, sudden shaking of the ground caused by the abrupt release of energy from underground, usually due to the movement of <b>tectonic plates</b> along a fault.
       </p>
@@ -84,3 +62,4 @@
   </div>
 </body>
 </html>
+
