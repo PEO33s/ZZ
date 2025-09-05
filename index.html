@@ -11,54 +11,55 @@
       color: white;
       text-shadow: 1px 1px 3px #000;
       box-sizing: border-box;
+      width: 100%;
       min-height: 100%;
-      overflow-y: auto; /* Enable scrolling */
+      overflow-y: auto;
+      display: block;
+    }
+
+    .wrapper {
+      padding: 20px;
       display: flex;
       justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding: 20px;
     }
 
     .content {
       background-color: rgba(0, 0, 0, 0.5);
-      padding: 24px;
-      max-width: 720px;
+      padding: 20px;
       width: 100%;
+      max-width: 720px;
       box-shadow: 0 0 12px rgba(0,0,0,0.6);
       border-radius: 12px;
-      animation: fadeIn 1s ease-out;
+      box-sizing: border-box;
     }
 
     h2 {
       margin-top: 0;
-      font-size: 26px;
+      font-size: 24px;
       letter-spacing: 1px;
     }
 
     p {
-      font-size: 17px;
+      font-size: 16px;
       line-height: 1.6;
       margin: 0;
     }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @media (max-width: 600px) {
-      h2 { font-size: 22px; }
-      p { font-size: 15px; }
+    @media (max-width: 480px) {
+      h2 { font-size: 20px; }
+      p { font-size: 14px; }
+      .content { padding: 16px; }
     }
   </style>
 </head>
 <body>
-  <div class="content">
-    <h2>What is an Earthquake?</h2>
-    <p>
-      An <b>earthquake</b> is the violent, sudden shaking of the ground caused by the abrupt release of energy from underground, usually due to the movement of <b>tectonic plates</b> along a fault.
-    </p>
+  <div class="wrapper">
+    <div class="content">
+      <h2>What is an Earthquake?</h2>
+      <p>
+        An <b>earthquake</b> is the violent, sudden shaking of the ground caused by the abrupt release of energy from underground, usually due to the movement of <b>tectonic plates</b> along a fault.
+      </p>
+    </div>
   </div>
 </body>
 </html>
